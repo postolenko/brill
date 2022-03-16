@@ -1,1 +1,1 @@
-# http://postolenko.github.io/slider/index.html
+# http://postolenko.github.io/brill/index.html
