@@ -448,3 +448,16 @@ textarea:focus {
 footer {
     padding: 1px 0;
 }
+
+
+@media only screen and (max-width: 600px) {
+    .br_slide_1_descript_title h3 {
+        font-size: 15px;
+    }
+    .br_slide_1_descript_title p {
+        font-size: 10px;
+    }
+    .br_slide_1_descript_content p {
+        font-size: 12px;
+    }
+}
