@@ -29,9 +29,16 @@ $(document).ready(function() {
             autoplay: true,
             autoplaySpeed: 4000,
             speed: 1200,
-            slidesToShow: 3,
-            slidesToScroll: 2,
+            slidesToShow: 4,
+            slidesToScroll: 3,
             responsive: [
+                {
+                  breakpoint: 1072,
+                  settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 2
+                  }
+                },
                 {
                   breakpoint: 900,
                   settings: {
@@ -83,4 +90,16 @@ $(document).ready(function() {
             ]
       });
     }
+
+    $(".br_slide_2").fancybox({
+      afterShow: function() {
+        // After the show-slide-animation has ended - play the vide in the current slide
+        this.content.find('.fancybox-iframe').trigger('play')
+        
+        // Attach the ended callback to trigger the fancybox.next() once the video has ended.
+        this.content.find('.fancybox-iframe').on('ended', function() {
+          $.fancybox.next();
+        });
+      }
+    });
 });
