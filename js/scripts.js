@@ -91,16 +91,14 @@ $(document).ready(function() {
       });
     }
 
-    $(".br_slide_2").fancybox({
-      afterShow: function() {
-        // After the show-slide-animation has ended - play the vide in the current slide
-        this.content.find('.fancybox-iframe').trigger('play')
-        
-        // Attach the ended callback to trigger the fancybox.next() once the video has ended.
-        this.content.find('.fancybox-iframe').on('ended', function() {
-          $.fancybox.next();
-        });
-      }
+$(".fancybox").fancybox({
+        helpers: {
+            media: true
+        },
+        youtube: {
+            autoplay: 1, // enable autoplay
+            start: 47 // set start time in seconds (embed)
+        }
     });
 
     if( $(".br_slider_3").length > 0 ) {
