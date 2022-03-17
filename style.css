@@ -328,6 +328,7 @@ textarea:focus {
 .br_slider_1 {
     margin-top: 40px;
     height: 250px;
+    overflow: hidden;
 }
 
 .br_slider_1 .slick-slide > div {
