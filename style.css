@@ -570,7 +570,19 @@ textarea:focus {
 
 /*-- /Slider 2 --*/
 
+/*-- Slider 3 --*/
 
+.br_slider_3 {
+    margin-top: 40px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.br_slider_3 .slick-slide > div {
+    padding: 4.5px !important;
+}
+
+/*-- /Slider 3 --*/
 
 
 /*-------------------------------------------*/
